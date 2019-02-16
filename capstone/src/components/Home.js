@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
+import Footer from './Footer'
 
 const Home = props =>  
   <div>
     THIS IS THE HOME PAGE!
+
     {/* <div className="container">
       <Labels />
     </div>

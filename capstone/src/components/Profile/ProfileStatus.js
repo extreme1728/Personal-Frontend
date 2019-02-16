@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 
-class Footer extends Component {
+class ProfileStatus extends Component {
 
   render(){
     
     return (
       <div>
-        THIS IS THE FOOTER
+        ProfileSettings
       </div>
     )
   }
 }
 
 
-export default Footer
+export default ProfileStatus

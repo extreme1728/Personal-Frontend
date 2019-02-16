@@ -102,3 +102,8 @@ seems to default as a get all request.
 3. create more detailed user profiles
 4. Create react front end. 
 
+1. Ran into a problem where my file component SessionConnection.js wouldnt load. It seemed to be related to a
+bug regarding the renaming of the file which was first SessionConnection and then renamed it SessionConnection.js
+I had to write my import file location as SessionConnection.js with the .js to make it work.
+Scott mentioned it was probably a webpack problem and by restarting my react server the problem resolved to
+read the file properly without the .js in the file source name.  
