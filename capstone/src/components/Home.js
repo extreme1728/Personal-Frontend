@@ -1,9 +1,12 @@
 import React, {Component} from 'react'
 import Footer from './Footer'
+import image from './images/ihelp.jpg'
 
-const Home = props =>  
-  <div>
-    THIS IS THE HOME PAGE!
+const Home = props =>
+
+     <div>
+
+    <img src={image} alt="ihelp" />
 
     {/* <div className="container">
       <Labels />
@@ -24,5 +27,4 @@ const Home = props =>
 
     <Footer /> */}
   </div>
-
 export default Home

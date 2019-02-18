@@ -49,16 +49,36 @@ class Signup extends Component {
           </div>
 
           <div className="form-label-group">
-            <input type="text" name="inputEmail" id="inputEmail" className="form-control" placeholder="Email address" required autoFocus />
+          <p>
+            <input type="text" name="FirstName" id="FirstName" className="form-control" placeholder="First Name" required autoFocus />
+            </p>
           </div>
 
           <div className="form-label-group">
+          <p>
+            <input type="text" name="LastName" id="LastName" className="form-control" placeholder="Last Name" required autoFocus />
+            </p>
+          </div>
+
+          <div className="form-label-group">
+          <p>
+            <input type="text" name="inputEmail" id="inputEmail" className="form-control" placeholder="Email address" required autoFocus />
+            </p>
+          </div>
+
+          <div className="form-label-group">
+          <p>
             <input type="password" name="inputPassword" id="inputPassword" className="form-control" placeholder="Password" required />
+            </p>
+          </div>
+
+          <div className="form-label-group">
+            <input type="text" name="ConfirmPassword" id="ConfirmPassword" className="form-control" placeholder="ConfirmPassword" required autoFocus />
           </div>
           <div className={ !this.state.showErrorMessage ? 'login-auth-error login-hide-auth-error' : 'login-auth-error' }>
             Invalid Username or Password
           </div>
-          <button className="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+          <button className="btn btn-lg btn-primary btn-block" onClick={()=> this.props.history.push('/Profile')} type="submit">Sign Up</button>
         </form>
       </div>
     )
